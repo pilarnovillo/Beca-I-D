@@ -17,7 +17,7 @@ def preprocesar(images, filas, columnas, canales):
     img = img/255 # Estandarización
     img = img.reshape(filas*columnas*canales) # "Aplanamiento" y almacenamiento
     X[:,i] = img
-    if 'dog' in image_file.lower():
+    if 'car' in image_file.lower():
       y[0, i] = 1
     elif 'cat' in image_file.lower():
       y[0, i] = 0
